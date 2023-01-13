@@ -13,3 +13,10 @@
     {% endfor %}
   {% endif %}
     {% endfor %}
+
+
+$(window).load(function() {
+
+$('.product-options--option').eq(1).find('.radios--main.current').find('input').trigger('click');
+$('.product-options--option').eq(2).find('.radios--main.current').find('input').trigger('click');
+});
